@@ -1,0 +1,22 @@
+.star:hover {
+  color: red !important;
+}
+.star {
+  cursor: pointer;
+}
+.name {
+  display: block;
+}
+
+.name span {
+  float: right;
+}
+.trash {
+  color: red;
+  cursor: pointer;
+  margin: 5px;
+}
+.pencil {
+  color: cornflowerblue;
+  cursor: pointer;
+}
