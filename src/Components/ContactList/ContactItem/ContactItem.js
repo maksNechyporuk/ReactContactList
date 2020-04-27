@@ -12,7 +12,7 @@ class ContactItem extends Component {
     email: this.props.email,
     gender: this.props.gender,
     avatar: this.props.avatar,
-    favorite: this.props.favorite
+    favorite: this.props.favorite,
   };
   randomInteger = (min, max) => {
     let rand = min + Math.random() * (max - min);
@@ -21,7 +21,7 @@ class ContactItem extends Component {
   onRandomAvata = () => {
     let randomAvatar = this.randomInteger(1, 99);
     this.setState({
-      avatar: randomAvatar
+      avatar: randomAvatar,
     });
   };
 
@@ -34,7 +34,7 @@ class ContactItem extends Component {
       gender,
       avatar,
       favorite,
-      id
+      id,
     } = this.state;
     let favoriteClass = ["fa-star-o", "star"];
     if (this.props.favorite) {
@@ -64,7 +64,7 @@ class ContactItem extends Component {
               />
               <NavLink
                 to={{
-                  pathname: `/editcontact`
+                  pathname: `/editcontact`,
                 }}
               >
                 <FontAwesome
@@ -102,7 +102,7 @@ class ContactItem extends Component {
               <span className="text-muted">{email}</span>
               <br />
             </span>
-            <button className="btn btn-success" onClick={this.onRandomAvata}>
+            <button className="btn btn-warning" onClick={this.onRandomAvata}>
               Random avatar
             </button>
           </div>
