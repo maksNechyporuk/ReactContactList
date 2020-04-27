@@ -15,7 +15,7 @@ pipeline  {
             steps {
                 echo 'Creating docker image ...'
                 dir('.'){
-                    sh "docker build -t maxnechiporuk/react_contact_list . "
+                    sh "docker build -t maxnechiporuk/react-contact-list . "
                 }
             }
         }
@@ -33,7 +33,7 @@ pipeline  {
             steps {
                 echo " ============== pushing image =================="
                 sh '''
-                docker push maxnechiporuk/react_contact_list:latest
+                docker push  maxnechiporuk/react-contact-list:latest
                 '''
             }
         }
