@@ -102,7 +102,7 @@ class ContactItem extends Component {
               <span className="text-muted">{email}</span>
               <br />
             </span>
-            <button className="btn btn-warning" onClick={this.onRandomAvata}>
+            <button className="btn btn-success" onClick={this.onRandomAvata}>
               Random avatar
             </button>
           </div>
